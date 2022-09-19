@@ -1,0 +1,61 @@
+html {
+    background: linear-gradient(180deg, #d7e8f9, #669bd1);
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background: url(files/7.jpg) no-repeat right bottom;
+    background-color: #669bd1;
+}
+
+table {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+}
+
+th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px;
+}
+
+.gods-eye {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nechet {
+    background: #FFEBCD;
+}
+
+.chet {
+    background: #FFDEAD;
+}
+
+.main-str {
+    background: #DEB887;
+}
+
+#non-str {
+    background: #FFFFFF;
+}
+
+#britain {
+    background: linear-gradient(180deg, #FFFFFF, #0000FF, #FF0000);
+    color: white;
+}
+
+footer {
+    background-color: #1c70c4;
+    padding: 40px 0;
+    width: 100%;
+}
