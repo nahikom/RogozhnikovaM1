@@ -8,19 +8,20 @@
 <body>
     <header>
         <div>
-            <img src="https://i.pinimg.com/564x/de/75/09/de75097680e870d2570ceb4137ca2ed9.jpg" alt="Логотип" style="padding: 10px; width: 100px; height: 100px; border-radius: 100px">
-             <h1 style="color: aliceblue; padding-bottom: 20px; padding-left: 20px">Страница Геншин</h1>
+            <img src="https://i.pinimg.com/564x/de/75/09/de75097680e870d2570ceb4137ca2ed9.jpg" alt="Логотип">
+             <h1>Страница Геншин</h1>
         </div>
     </header>
     <br>
-    <table style="background-color: #8fbdea">
-        <tr>
-            <th><a href="files/index2.html"><b>Форма</b></a></th>
-            <th><a href="#ssilki">Ссылки</a></th>
-            <th><a href="#tabl">Таблица</a></th>
-        </tr>
-    </table>
-    <div style="background-color: #8fbdea">
+    <nav>
+        <ul>
+            <li><a href="#forma"><b>Форма</b></a></li>
+            <li><a href="#ssilki">Ссылки</a></li>
+            <li><a href="#tabl">Таблица</a></li>
+        </ul>
+    </nav>
+    <div class="back">
+    
     <h2 id="ssilki" style="color: aliceblue">Список гиперссылок</h2>
     <ol>
         <li>
@@ -63,12 +64,12 @@
             </p>
         </li>
         <li><p>Ссылка-изображение</p>
-            <p style="text-align: center"><a href="https://genshin-impact.fandom.com/ru/wiki/Тигнари"><img src="https://resize.yandex.net/imgs_touch?key=a3425ace2932d82e9b4acf68df32f930&url=https%3A%2F%2Fwww.youloveit.ru%2Fuploads%2Fposts%2F2022-07%2F1658661668_youloveit_ru_genshin_impact_tignari19.jpg&width=759&height=1200&typemap=png%3Apng%3B*%3Ajpg&quality=60&use-cache-headers=yes&crop=no&enlarge=no" alt="Тигнари"></a></p>
+            <p class="image"><a href="https://genshin-impact.fandom.com/ru/wiki/Тигнари"><img src="https://resize.yandex.net/imgs_touch?key=a3425ace2932d82e9b4acf68df32f930&url=https%3A%2F%2Fwww.youloveit.ru%2Fuploads%2Fposts%2F2022-07%2F1658661668_youloveit_ru_genshin_impact_tignari19.jpg&width=759&height=1200&typemap=png%3Apng%3B*%3Ajpg&quality=60&use-cache-headers=yes&crop=no&enlarge=no" alt="Тигнари"></a></p>
             
         </li>
         <li>
             <span>Ссылки из прямоугольных и круглых областей картинки</span>
-            <p style="text-align: center"><img src="files/4.jpg" usemap="#figuri" alt="" ></p>
+            <p class="image"><img src="files/4.jpg" usemap="#figuri" alt="" ></p>
             <map name="figuri">
                 <area shape="rect" coords="0,0,220,200" href="https://genshin-impact.fandom.com/ru/wiki/Хэйдзо" alt="Детектив">
                 <area shape="circle" coords="350,104,80" href="https://genshin-impact.fandom.com/ru/wiki/Венти" alt="Барбатос">
@@ -88,9 +89,118 @@
         </li>
     </ol>
     </div>
-    <br>
-    <div style="background-color: #8fbdea">
-    <table id="tabl" style="background-color: #8fbdea"><caption>Таблица персонажей</caption>
+    <div class="back">
+    <h2 id="forma">Анкета Genshin Impact</h2>
+    <form action="/" method="POST">
+        <label>
+            Имя:<br />
+            <input name="field-name-1"
+                   placeholder="ФИО" />
+        </label><br />
+        <label>
+            e-mail:<br />
+            <input name="field-email"
+                   type="email"
+                   placeholder="Введите вашу почту" />
+        </label><br />
+        <label>
+            Дата рождения:<br />
+            <input name="field-date"
+                   value="2022-0-13"
+                   type="date" />
+        </label><br />
+        Пол:<br />
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение1" />
+            М
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение2" />
+            Ж
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение3" />
+            Не скажу
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение4" />
+            Другой
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение5" />
+            Деревянный
+        </label><br />
+
+        Какое оружие предпочитаете?<br />
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-2" value="Значение1" />
+            Копьё
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение2" />
+            Одноручник
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение3" />
+            Двуручник
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение4" />
+            Древковое
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение5" />
+            Лук
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение6" />
+            Легендарное
+        </label><br />
+        <label>
+            В каком регионе хотели бы жить и почему?<br />
+            <textarea name="field-name-2">Введите что-нибудь...</textarea>
+        </label><br />
+        <label>
+            Какой глаз Бога хотели бы получить?
+            <br />
+            <select name="field-name-4[]"
+                    multiple="multiple">
+                <option value="Значение1">Пиро</option>
+                <option value="Значение2" selected="selected">Гидро</option>
+                <option value="Значение4" selected="selected">Электро</option>
+                <option value="Значение5" selected="selected">Анемо</option>
+                <option value="Значение6" selected="selected">Дендро</option>
+                <option value="Значение7" selected="selected">Крио</option>
+                <option value="Значение8" selected="selected">Гео</option>
+            </select>
+        </label><br />
+
+        Уверены в своём выборе?<br />
+        <label>
+            <input type="checkbox" checked="checked"
+                   name="check-1" />
+            Естественно
+        </label><br />
+        В скором времени (не)рассмотрим вашу заяку, (не)будем рады видеть вас в Тейвате!
+        <input type="submit" value="Отправить" />
+    </form>
+    <figure>
+        <p class="image"><img src="files/6.jpg"></p>
+    </figure>
+    </div>
+    <div class="back">
+    <table id="tabl" class="back"><caption>Таблица персонажей</caption>
         <tr class="main-str">
             <th id="non-str"></th>
             <th colspan="4">Мондштадт</th>
@@ -185,8 +295,9 @@
     </table>
     </div>
     <figure>
-        <p style="text-align: center"><img src="files/5.jpg" alt="ну пожалуйста"></p>
+        <p class="image"><img src="files/5.jpg" alt="ну пожалуйста"></p>
     </figure>
+    
     <footer>
         <div>
             (с) Рогожникова Мария 2022
